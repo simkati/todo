@@ -4,7 +4,7 @@ This project about creating a basic todo list. It was a test work for apply a jo
 I was newish with this stack when I working on this project, I learnt a lot during the development. The main challenge was working with nested documents.
 ## Main features
 
-###I have achieved the main goals, except server side validation
+### I have achieved the main goals, except server side validation
 
 You can create tasks and group them under collections.
 You can add tags to task, and switch it's status completed or back to uncompleted.
