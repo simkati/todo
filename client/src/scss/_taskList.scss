@@ -1,0 +1,57 @@
+
+.collection {
+
+  .task-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .task{
+      border: 1px solid $primerydark;
+      width: 180px;
+      min-height: 100px;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 5px;
+      position: relative;
+
+      .task-name {
+        text-align: center;
+        border-bottom: 1px solid $primerydark;
+        padding: 5px;
+      }
+      .done {
+        text-align: center;
+        background-color: $green;
+        font-size: 11px;
+        padding: 5px;
+      }
+      .tag-container {
+        margin: 5px 0 30px;
+      }
+      .action-btns {
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        button {
+          @include btn($lightbraun);
+          color: $primerydark;
+          margin: 3px 0;
+        }
+        .edit-btns {
+          display: inline-block;
+          margin-top: 5px;
+          .nav-link {
+            @include linkBtn($darkblue);
+          }
+        }
+
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,59 @@
+
+.task-form {
+  background-color: $beige;
+  padding: 20px;
+  width: 618px;
+  border-radius: 5px;
+
+  .task-form-header {
+    h3 {
+      display: inline-block;
+    }
+    .action-btn-group {
+      display: inline-block;
+      float: right;
+      margin-top: 18px;
+
+      .undo-btn {
+        margin-right: 10px;
+        @include linkBtn($darkbraun);
+        border: none;
+      }
+      .redo-btn {
+        @include linkBtn($primerydark);
+        border: none;
+      }
+    }
+  }
+
+  .form-group {
+     margin: 10px 0;
+
+     label {
+       margin-right: 10px;
+     }
+     .label {
+       float: left;
+       margin-right: 19px;
+     }
+     .form-check-input {
+       width: 18px;
+       height: 18px;
+     }
+     .save-btn {
+       @include linkBtn($darkbraun);
+       width: 30px;
+       display: inline-block;
+     }
+     .cancel-btn {
+       @include linkBtn($darkblue);
+       display: inline-block;
+       float: right;
+     }
+  }
+}
+@media (max-width: 620px) {
+  .task-form {
+    width: 90%;
+  }
+}

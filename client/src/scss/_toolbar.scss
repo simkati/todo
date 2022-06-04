@@ -1,0 +1,62 @@
+.toolbar {
+  position: relative;
+  margin-bottom: 20px;
+  .create-collection {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 16px;
+
+    .create-collection-form {
+      z-index: 10;
+      width: 620px;
+      height: 250px;
+      background-color: white;
+      border: 1px solid #76232F;
+      position: relative;
+      top: 50%;
+      text-align: center;
+      //popup close button
+      .close {
+        text-align: right;
+        padding: 0 20px;
+      }
+      //save new collection btn
+      button {
+        display: block;
+        margin-left: 45%;
+        margin-top: 10px;
+      }
+    }
+    //create collection btn
+    button {
+      @include btn($darkblue);
+    }
+  }
+  h3 {
+    width: 70%;
+    display: inline-block;
+    font-size: 26px;
+    margin: 15px auto;
+  }
+  .search-bar {
+    width: fit-content;
+      .clear-btn {
+        @include btn($lightbraun);
+        color: black;
+        margin-left: 5px;
+      }
+      form {
+        background-color: $darkbraun;
+        padding: 2px 2px 2px 4px;
+        border-radius: 5px;
+        display: inline-block;
+        button {
+          @include btn($darkbraun);
+        }
+      }
+      input {
+        margin-right: 3px;
+      }
+  }
+}

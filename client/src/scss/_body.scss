@@ -1,0 +1,25 @@
+body{
+    background-image: url('./img/logo.png'), url('./img/background.png');
+    background-repeat: no-repeat, repeat-x;
+    background-position: center top, left top;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 100% $font-stack;
+    width: 600px;
+    margin: 100px auto 0;
+
+    #root {
+      width: 100%;
+
+      .input-error {
+        color: red;
+      }
+    }
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}

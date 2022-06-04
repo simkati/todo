@@ -1,0 +1,33 @@
+
+.collection {
+  .collection-head {
+    text-align: center;
+    border: 1px solid $darkbraun;
+    background-color: $primerydark;
+    padding: 10px 5px;
+    border-radius: 5px;
+    position: relative;
+    text-transform: capitalize;
+    color: white;
+
+    .nav-link {
+      @include linkBtn($lightbraun);
+      position: absolute;
+      right: 5px;
+      top: 7px;
+      color:  $primerydark;
+    }
+  }
+
+}
+@media (max-width: 620px) {
+  .toolbar .create-collection  {
+    left: 0;
+    right: 0;
+  .create-collection-form {
+      width: 100%;
+      position: fixed;
+      top: 10%;
+    }
+  }
+}

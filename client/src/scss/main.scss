@@ -1,0 +1,39 @@
+$font-stack: Helvetica, sans-serif;
+$lightbraun: #C0B6AC;
+$beige: #e5e0e0;
+$darkbraun: #76232F;
+$darkblue: #232d77;
+$darkgrey: #494444;
+$grey: #8F8F9D;
+$green: #5ccea6;
+$primerydark: #333F48;
+
+@mixin linkBtn($bckgr-color) {
+  #{background-color}: $bckgr-color;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 13px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin btn($bckgr-color) {
+  #{background-color}:$bckgr-color;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@import 'tags';
+@import 'collectionList';
+@import 'taskForm';
+@import 'taskList';
+@import 'toolbar';
+@import 'body';
